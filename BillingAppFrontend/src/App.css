@@ -1,0 +1,26 @@
+
+.App {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%; /* Adjust this width as needed */
+  background-color: #f4f4f4; /* Example background color */
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  position: fixed;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Content Area */
+.main-content {
+  width: 80%; /* Takes the remaining width */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+  box-sizing: border-box; /* Ensures padding is included in height/width calculations */
+  padding: 20px; /* Optional padding */
+}

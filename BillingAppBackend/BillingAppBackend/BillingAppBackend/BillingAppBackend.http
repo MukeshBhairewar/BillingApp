@@ -1,0 +1,6 @@
+@BillingAppBackend_HostAddress = http://localhost:5095
+
+GET {{BillingAppBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

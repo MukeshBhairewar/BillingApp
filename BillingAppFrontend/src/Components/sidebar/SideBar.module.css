@@ -1,0 +1,69 @@
+/* Sidebar Container */
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    /* background-color:rgb(163, 133, 228); */
+
+    background:linear-gradient(125deg, #b3c7ff, #9010c3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+  }
+  
+  /* Sidebar Header */
+  .sidebarHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .sidebarLogo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .companyName {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Sidebar Navigation */
+  .sidebarNav ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+  }
+  
+  .sidebarNav li {
+    margin: 15px 0;
+  }
+  
+  /* Link and Icon Styling */
+  .sidebarNav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    /* transition: background-color 0.3s ease; */
+  }
+  
+  .sidebarNav a:hover {
+    background-color: rgb(219, 202, 202);
+    border-radius: 8px;
+    color: black;
+  }
+  
+  .icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 20px; /* Icon size */
+  }
+  

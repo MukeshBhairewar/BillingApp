@@ -1,0 +1,193 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|c:\\users\\sai\\downloads\\billingapp\\billingapp\\billingappbackend\\billingappbackend\\billingappbackend\\repository\\billingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|solutionrelative:billingappbackend\\repository\\billingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|c:\\users\\sai\\downloads\\billingapp\\billingapp\\billingappbackend\\billingappbackend\\billingappbackend\\repository\\ibillingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|solutionrelative:billingappbackend\\repository\\ibillingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|c:\\users\\sai\\downloads\\billingapp\\billingapp\\billingappbackend\\billingappbackend\\billingappbackend\\model\\billingmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|solutionrelative:billingappbackend\\model\\billingmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|c:\\users\\sai\\downloads\\billingapp\\billingapp\\billingappbackend\\billingappbackend\\billingappbackend\\model\\billinginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|solutionrelative:billingappbackend\\model\\billinginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|c:\\users\\sai\\downloads\\billingapp\\billingapp\\billingappbackend\\billingappbackend\\billingappbackend\\controllers\\billingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|solutionrelative:billingappbackend\\controllers\\billingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|c:\\users\\sai\\downloads\\billingapp\\billingapp\\billingappbackend\\billingappbackend\\billingappbackend\\model\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|solutionrelative:billingappbackend\\model\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|c:\\users\\sai\\downloads\\billingapp\\billingapp\\billingappbackend\\billingappbackend\\billingappbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|solutionrelative:billingappbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|c:\\users\\sai\\downloads\\billingapp\\billingapp\\billingappbackend\\billingappbackend\\billingappbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|solutionrelative:billingappbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|c:\\users\\sai\\downloads\\billingapp\\billingapp\\billingappbackend\\billingappbackend\\billingappbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9D1B4BFD-4A0C-47FB-9455-F36B80FB86B1}|BillingAppBackend\\BillingAppBackend.csproj|solutionrelative:billingappbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BillingMaterial.cs",
+              "DocumentMoniker": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Model\\BillingMaterial.cs",
+              "RelativeDocumentMoniker": "BillingAppBackend\\Model\\BillingMaterial.cs",
+              "ToolTip": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Model\\BillingMaterial.cs",
+              "RelativeToolTip": "BillingAppBackend\\Model\\BillingMaterial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T08:16:03.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BillingController.cs",
+              "DocumentMoniker": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Controllers\\BillingController.cs",
+              "RelativeDocumentMoniker": "BillingAppBackend\\Controllers\\BillingController.cs",
+              "ToolTip": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Controllers\\BillingController.cs",
+              "RelativeToolTip": "BillingAppBackend\\Controllers\\BillingController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:33:14.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Repository\\BillingRepository.cs",
+              "RelativeDocumentMoniker": "BillingAppBackend\\Repository\\BillingRepository.cs",
+              "ToolTip": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Repository\\BillingRepository.cs",
+              "RelativeToolTip": "BillingAppBackend\\Repository\\BillingRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:31:36.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IBillingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Repository\\IBillingRepository.cs",
+              "RelativeDocumentMoniker": "BillingAppBackend\\Repository\\IBillingRepository.cs",
+              "ToolTip": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Repository\\IBillingRepository.cs",
+              "RelativeToolTip": "BillingAppBackend\\Repository\\IBillingRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:31:08.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BillingInfo.cs",
+              "DocumentMoniker": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Model\\BillingInfo.cs",
+              "RelativeDocumentMoniker": "BillingAppBackend\\Model\\BillingInfo.cs",
+              "ToolTip": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Model\\BillingInfo.cs",
+              "RelativeToolTip": "BillingAppBackend\\Model\\BillingInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:28:58.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Program.cs",
+              "RelativeDocumentMoniker": "BillingAppBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Program.cs",
+              "RelativeToolTip": "BillingAppBackend\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAewBwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:27:38.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BillingAppBackend\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\appsettings.Development.json",
+              "RelativeToolTip": "BillingAppBackend\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-14T16:06:14.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Material.cs",
+              "DocumentMoniker": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Model\\Material.cs",
+              "RelativeDocumentMoniker": "BillingAppBackend\\Model\\Material.cs",
+              "ToolTip": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\Model\\Material.cs",
+              "RelativeToolTip": "BillingAppBackend\\Model\\Material.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:28:31.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "BillingAppBackend\\appsettings.json",
+              "ToolTip": "C:\\Users\\sai\\Downloads\\BillingAPP\\BillingAPP\\BillingAppBackend\\BillingAppBackend\\BillingAppBackend\\appsettings.json",
+              "RelativeToolTip": "BillingAppBackend\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-14T16:06:10.292Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

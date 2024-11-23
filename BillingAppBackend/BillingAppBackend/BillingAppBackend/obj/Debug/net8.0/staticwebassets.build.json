@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dbldRfokzyKHGD/KDM2+XeaGvvWhGgTv7lrTIzoaDmg=",
+  "Source": "BillingAppBackend",
+  "BasePath": "_content/BillingAppBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
