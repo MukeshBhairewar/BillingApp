@@ -62,8 +62,8 @@
   }
   
   /* Button hover effect */
-  button:hover {
-    background-color: #0056b3;
+  .button:hover {
+    background: linear-gradient(125deg, #9010c3, #b3c7ff);
   }
   
   /* Disabled button styling */

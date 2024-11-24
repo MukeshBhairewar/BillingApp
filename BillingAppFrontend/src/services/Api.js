@@ -29,3 +29,26 @@ export const addMaterial = async (materialData) => {
     };
   }
 };
+
+
+// Fetch materials (GetAllMaterials API)
+export const getAllMaterials = async () => {
+  try {
+    const response = await api.get('/Billing/GetAllMaterials');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching materials:', error);
+    throw error;
+  }
+};
+
+// Submit billing info (AddBillingInfo API)
+export const addBillingInfo = async (data) => {
+  try {
+    const response = await api.post('/Billing/AddBillingInfo', data);
+    return response.data;
+  } catch (error) {
+    console.error('Error adding billing info:', error);
+    throw error;
+  }
+};

@@ -22,7 +22,7 @@ export const AddMaterial = () => {
       // Display success toast
       toast.success(`Material added successfully!`, {
         position: "top-right", // Position of the toast
-        autoClose: 5000, // Duration to show the toast
+        autoClose: 1500, // Duration to show the toast
         hideProgressBar: false, // Show the progress bar
         closeOnClick: true, // Close on click
         pauseOnHover: true, // Pause when hovered
@@ -40,7 +40,7 @@ export const AddMaterial = () => {
       // Display error toast
       toast.error(`Error adding material: ${error}`, {
         position: "top-right", // Position of the toast
-        autoClose: 5000, // Duration to show the toast
+        autoClose: 1500, // Duration to show the toast
         hideProgressBar: false, // Show the progress bar
         closeOnClick: true, // Close on click
         pauseOnHover: true, // Pause when hovered

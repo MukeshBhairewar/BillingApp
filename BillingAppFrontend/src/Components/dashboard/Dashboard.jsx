@@ -30,34 +30,8 @@ export const Dashboard = () => {
   }
 
   return (
-    <div className={styles.gridContainer}>
-      <h3>Billing Information</h3>
-      <table className={styles.gridTable}>
-        <thead>
-          <tr>
-            <th>Billing ID</th>
-            <th>Material Name</th>
-            <th>Customer Name</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Total</th>
-            <th>Billing Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          {billingData.map((item) => (
-            <tr key={item.BillingId}>
-              <td>{item.BillingId}</td>
-              <td>{item.MaterialName}</td>
-              <td>{item.NameOfCustomer}</td>
-              <td>{item.Quantity}</td>
-              <td>{item.Price}</td>
-              <td>{item.Total}</td>
-              <td>{item.BillingDate}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div>
+      <h1>Work IN Progress !!</h1>
     </div>
   );
 };

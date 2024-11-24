@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import { SideBar } from './Components/sidebar/SideBar'
 import { Dashboard } from './Components/dashboard/Dashboard'
 import { AddMaterial } from './Components/addmaterials/AddMaterial'
+import { GenerateBill } from './Components/generatebill/GenerateBill'
+
 import './App.css'
 
 function App() {
