@@ -1,0 +1,124 @@
+ /* Title styling */
+ .generateBillContainer h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.generateBillContainer {
+  padding: 30px;
+  margin-left: 30%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(144, 16, 195, 0.6);
+  box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+}
+
+.generateBillForm {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.materialsTableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0.5fr; /* Fixed column widths */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.materialsTableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0.5fr; /* Ensure it matches the header */
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.readonlyInput {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  text-align: center;
+}
+
+/* Updated action buttons styling */
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+  width: 48%; /* Adjust button size for better alignment */
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(125deg, #b3c7ff, #9010c3);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.button:hover {
+  background: linear-gradient(125deg, #9010c3, #b3c7ff);
+}
+
+/* Input field alignment for better appearance */
+input,
+select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Form container spacing */
+.generateBillForm > * {
+  margin-bottom: 20px;
+}
+
+/* Add material button styling */
+.addMaterialButton {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.addMaterialButton:hover {
+  background-color: #e6e6e6;
+}
+
+.totalBillAmountContainer {
+  display: flex;
+  align-items: center;
+  gap: 100px; /* Space between label and input */
+  text-align: left;
+}
+
+.totalBillLabel {
+  font-weight: bold;
+  flex-basis: 30%; /* Adjust this value to increase label width */
+  text-align: right; /* Align the label text to the right */
+}
+
+.readonlyInput {
+  flex-basis: 50%; /* Reduce the width of the input box */
+}

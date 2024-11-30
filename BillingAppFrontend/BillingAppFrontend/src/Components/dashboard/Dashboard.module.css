@@ -1,0 +1,22 @@
+.gridContainer {
+    padding: 20px;
+    background-color:white;
+    margin-left: 100px;
+    width: 100%;
+  }
+  
+  .gridTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .gridTable th, .gridTable td {
+    border: 2px solid rgb(20, 19, 19);
+    padding: 25px;
+    text-align: left;
+  }
+  
+  .gridTable th {
+    background-color: whitesmoke;
+  }
+  
