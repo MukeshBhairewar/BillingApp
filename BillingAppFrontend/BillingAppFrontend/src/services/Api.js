@@ -7,13 +7,14 @@ const api = axios.create({
   }
 });
 
+// API to fetch all billing information
 export const getAllBillingInfo = async () => {
   try {
     const response = await api.get('/Billing/GetAllBillingInfo');
-    return { data: response.data, error: null };
+    return response.data; // Return data to the caller
   } catch (error) {
-    console.error('Error fetching billing info:', error);
-    return { data: null, error: error.response ? error.response.data : 'Network Error' };
+    console.error('Error fetching billing information:', error);
+    throw error; // Throw the error to be handled by the caller
   }
 };
 

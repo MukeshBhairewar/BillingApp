@@ -1,22 +1,109 @@
-.gridContainer {
-    padding: 20px;
-    background-color:white;
-    margin-left: 100px;
-    width: 100%;
-  }
-  
-  .gridTable {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .gridTable th, .gridTable td {
-    border: 2px solid rgb(20, 19, 19);
-    padding: 25px;
-    text-align: left;
-  }
-  
-  .gridTable th {
-    background-color: whitesmoke;
-  }
-  
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 45%;
+  box-shadow: 0 4px 8px rgba(144, 16, 195, 0.6); /* Soft shadow for floating effect */
+  margin-bottom: 0; /* Adjust margin to create spacing below the dashboard */
+  position: static;
+}
+
+
+
+/* Center h4 heading */
+.dashboard h4 {
+  text-align: center;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.dashboard .gridContainer {
+  margin-bottom: 0;
+  overflow-x: auto;
+}
+
+.dashboard .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(144, 16, 195, 0.6); /* Updated box shadow */
+  height: 300px; /* Fixed height for the table */
+  overflow-y: auto; /* Scroll when rows exceed height */
+  display: block; /* Make the table scrollable */
+}
+
+.dashboard .table th, .dashboard .table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  color: black; /* All text in table is black */
+}
+
+.dashboard .table th {
+  background-color: rgba(144, 16, 195, 0.6);
+  color: black; /* Header text color set to black */
+}
+
+.dashboard .table tr:hover {
+  background-color: #ddd;
+}
+
+.dashboard .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dashboard .pagination button,
+.dashboard .pagination span {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard .pagination button:hover,
+.dashboard .pagination span:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.dashboard .pagination .activePage {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.dashboard .pagination button:disabled,
+.dashboard .pagination span:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.dashboard .pagination button:disabled:hover,
+.dashboard .pagination span:disabled:hover {
+  background-color: #f0f0f0;
+}
+
+/* Pagination layout */
+.dashboard .pagination {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dashboard .pagination span {
+  padding: 6px 12px;
+}
+
+.dashboard .pagination .pageNumber {
+  margin: 0 4px;
+}

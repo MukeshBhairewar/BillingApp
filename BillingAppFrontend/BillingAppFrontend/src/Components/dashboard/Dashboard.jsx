@@ -1,38 +1,93 @@
 import React, { useState, useEffect } from 'react';
+import { getAllBillingInfo } from '../../services/Api';
 import styles from './Dashboard.module.css';
-import { getAllBillingInfo } from '../../services/Api'; 
 
 export const Dashboard = () => {
   const [billingData, setBillingData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const recordsPerPage = 6;
 
+  // Fetch billing data from the API
   useEffect(() => {
     const fetchBillingData = async () => {
-      const { data, error } = await getAllBillingInfo();
-      if (error) {
-        setError(error);
-      } else {
+      try {
+        const data = await getAllBillingInfo();
         setBillingData(data);
+      } catch (error) {
+        console.error('Error fetching billing data:', error);
       }
-      setLoading(false);
     };
 
     fetchBillingData();
   }, []);
 
-  if (loading) {
-    return <p>Loading data...</p>;
-  }
+  // Calculate pagination variables
+  const indexOfLastRecord = currentPage * recordsPerPage;
+  const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
+  const currentRecords = billingData.slice(indexOfFirstRecord, indexOfLastRecord);
+  const totalPages = Math.ceil(billingData.length / recordsPerPage);
 
-  if (error) {
-    return <p className={styles.error}>Error: {error}</p>;
-  }
+  // Handle pagination
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) setCurrentPage(currentPage - 1);
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+  };
 
   return (
-    <div>
-      <h1>Work IN Progress !!</h1>
+    <div className={styles.dashboard}>
+      <h4>Billing Information</h4>
+      <div className={styles.gridContainer}>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Billing ID</th>
+              <th>Customer Name</th>
+              <th>Billing Date</th>
+              <th>Total Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            {currentRecords.map((record) => (
+              <tr key={record.BillingID}>
+                <td>{record.BillingID}</td>
+                <td>{record.Name_OF_Customer}</td>
+                <td>{record.BillingDate}</td>
+                <td>{record.TotalBillAmount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className={styles.pagination}>
+        <button
+          onClick={handlePrevPage}
+          disabled={currentPage === 1}
+        >
+          Previous
+        </button>
+        {[...Array(totalPages)].map((_, index) => (
+          <span
+            key={index}
+            className={`${styles.pageNumber} ${currentPage === index + 1 ? styles.activePage : ''}`}
+            onClick={() => handlePageChange(index + 1)}
+          >
+            {index + 1}
+          </span>
+        ))}
+        <button
+          onClick={handleNextPage}
+          disabled={currentPage === totalPages}
+        >
+          Next
+        </button>
+      </div>
     </div>
   );
 };
-
