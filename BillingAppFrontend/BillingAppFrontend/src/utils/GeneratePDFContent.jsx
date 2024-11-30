@@ -1,4 +1,3 @@
-
 export const GeneratePDFContent = (doc, customerName, billingDate, materialsData, totalBillAmount) => {
   // Add company logo
   const img = "src/assets/bulb.png"; // Path to the image
@@ -14,29 +13,32 @@ export const GeneratePDFContent = (doc, customerName, billingDate, materialsData
   doc.setFontSize(12);
 
   // Add customer information
+  doc.setFont("helvetica", "bold")
   doc.text(`Customer Name: ${customerName}`, 20, 50);
   doc.text(`Billing Date: ${billingDate}`, 20, 60);
 
   // Add table header
   let yPosition = 80;
+  const columnPositions = [20, 40, 90, 110, 130, 160]; // X positions for each column
+  const columnWidths = [20, 50, 20, 20, 30, 30]; // Widths for each column
+
   doc.setFont("helvetica", "bold");
-  doc.text("Material Details", 20, yPosition);
+  doc.text("Billing Details", 20, yPosition);
 
   yPosition += 10;
   doc.setFontSize(10);
-  doc.text("S.No", 20, yPosition);
-  doc.text("Material Name", 40, yPosition);
-  doc.text("UoM", 90, yPosition);
-  doc.text("Quantity", 110, yPosition);
-  doc.text("Price", 130, yPosition);
-  doc.text("Amount", 160, yPosition);
+  const header = ["S.No", "Material Name", "UoM", "Quantity", "Price", "Amount"];
 
-  // Draw a horizontal line under the header
-  yPosition += 5;
-  doc.line(20, yPosition, 190, yPosition);
+  // Draw header row with borders
+  doc.setFillColor(220, 220, 220); // Light gray for the header background
+  doc.rect(20, yPosition - 8, 170, 10, "F"); // Header background
+  header.forEach((text, index) => {
+    doc.text(text, columnPositions[index] + 2, yPosition);
+  });
 
-  // Add materials table rows
+  // Draw grid for materials data
   doc.setFont("helvetica", "normal");
+  yPosition += 5; // Move below header
   materialsData.forEach((item, index) => {
     yPosition += 10;
 
@@ -47,22 +49,40 @@ export const GeneratePDFContent = (doc, customerName, billingDate, materialsData
     const price = Number(item.price).toFixed(2) || "0.00";
     const amount = (quantity * Number(item.price)).toFixed(2);
 
-    // Format and display each row in the table
-    doc.text(`${index + 1}`, 20, yPosition);
-    doc.text(materialName, 40, yPosition);
-    doc.text(uom, 90, yPosition);
-    doc.text(quantity.toString(), 110, yPosition);
-    doc.text(price, 130, yPosition);
-    doc.text(amount, 160, yPosition);
+    // Draw grid cells
+    doc.rect(20, yPosition - 8, 20, 10); // S.No
+    doc.rect(40, yPosition - 8, 50, 10); // Material Name
+    doc.rect(90, yPosition - 8, 20, 10); // UoM
+    doc.rect(110, yPosition - 8, 20, 10); // Quantity
+    doc.rect(130, yPosition - 8, 30, 10); // Price
+    doc.rect(160, yPosition - 8, 30, 10); // Amount
+
+    // Add text in cells
+    const row = [`${index + 1}`, materialName, uom, quantity.toString(), price, amount];
+    row.forEach((text, i) => {
+      doc.text(text, columnPositions[i] + 2, yPosition);
+    });
   });
 
-  // Add total amount
-  yPosition += 20;
-  doc.setFont("helvetica", "bold");
-  doc.text(`Total Amount: ${totalBillAmount.toFixed(2)}`, 20, yPosition);
+   // Add total amount with proper alignment
+   yPosition += 20;
+
+   const totalText = `Total Amount: ${totalBillAmount.toFixed(2)}`;
+   const textWidth = doc.getTextWidth(totalText);
+   const textHeight = 10; // Approximate height for 10pt font size
+   const rectX = 190 - textWidth - 10; // Right-align with padding
+   const rectY = yPosition - textHeight / 2; // Vertically center align
+   const rectWidth = textWidth + 20; // Add padding to the rectangle
+ 
+   doc.setFillColor(255, 255, 0); // Light yellow color
+   doc.rect(rectX, rectY, rectWidth, textHeight, "F"); // Draw rectangle with calculated dimensions
+ 
+   doc.setFont("helvetica", "bold");
+   doc.text(totalText, rectX + 10, yPosition); // Align text inside the rectangle
+ 
 
   // Add footer note
   yPosition += 20;
   doc.setFontSize(10);
-  doc.text("This bill is generated electronically.", 105, yPosition, { align: "center" });
+  doc.text("**This bill is generated electronically.**", 105, yPosition, { align: "center" });
 };
